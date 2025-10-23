@@ -1,0 +1,18 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "openai-rust-client"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = [
+    "openai>=1.0.0",
+]
+
+[tool.maturin]
+module-name = "openai_rust_client"
+binding = "pyo3"
+
+[tool.uv.workspace]
+members = ["pytest"]
