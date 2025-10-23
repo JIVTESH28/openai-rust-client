@@ -1,0 +1,189 @@
+{
+  "timestamp": "2025-10-23 13:24:57",
+  "system_info": {
+    "os": "Darwin",
+    "os_version": "Darwin Kernel Version 24.5.0: Tue Apr 22 19:54:29 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T6030",
+    "architecture": "arm64",
+    "processor": "arm",
+    "cpu_count": 11,
+    "total_memory": "18.00 GB",
+    "python_version": "3.10.16"
+  },
+  "configuration": {
+    "model": "gpt-3.5-turbo",
+    "num_requests": 50,
+    "concurrency_levels": [
+      1,
+      5,
+      10,
+      20,
+      50
+    ],
+    "test_messages": [
+      [
+        "user",
+        "What is the capital of France?"
+      ],
+      [
+        "user",
+        "Explain quantum computing in one sentence."
+      ],
+      [
+        "user",
+        "Write a haiku about programming."
+      ]
+    ]
+  },
+  "results": {
+    "1": {
+      "openai": {
+        "total_time": 43.65741841704585,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 1.1452807292077014,
+        "mean_latency": 0.8729548524972052,
+        "median_latency": 0.7216440415359102,
+        "p95_latency": 1.879439718608046,
+        "p99_latency": 0,
+        "min_latency": 0.566189624951221,
+        "max_latency": 4.210358583019115
+      },
+      "rust": {
+        "total_time": 36.072961541009136,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 1.386079708015048,
+        "mean_latency": 0.7211380065465346,
+        "median_latency": 0.7050865204655565,
+        "p95_latency": 0.8692780142650008,
+        "p99_latency": 0,
+        "min_latency": 0.5288222080562264,
+        "max_latency": 1.4330041659995914
+      },
+      "comparison": {
+        "speedup": 1.2102532354437936,
+        "latency_improvement": 17.3911452025701
+      }
+    },
+    "5": {
+      "openai": {
+        "total_time": 9.178070624941029,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 5.447768059675534,
+        "mean_latency": 0.7204172925301827,
+        "median_latency": 0.6800858960486948,
+        "p95_latency": 1.1088012645719574,
+        "p99_latency": 0,
+        "min_latency": 0.5504972910275683,
+        "max_latency": 1.214526499970816
+      },
+      "rust": {
+        "total_time": 9.463440958992578,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 5.283490457293739,
+        "mean_latency": 0.7212481683213263,
+        "median_latency": 0.6656254790723324,
+        "p95_latency": 1.1176486266718713,
+        "p99_latency": 0,
+        "min_latency": 0.5486613339744508,
+        "max_latency": 1.2715585420373827
+      },
+      "comparison": {
+        "speedup": 0.9698449712648782,
+        "latency_improvement": -0.11533257179674461
+      }
+    },
+    "10": {
+      "openai": {
+        "total_time": 7.297610374982469,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 6.851557897830372,
+        "mean_latency": 0.8130507241585292,
+        "median_latency": 0.7479223544942215,
+        "p95_latency": 1.52347809758503,
+        "p99_latency": 0,
+        "min_latency": 0.5808406659634784,
+        "max_latency": 2.1046514170011505
+      },
+      "rust": {
+        "total_time": 6.645050000050105,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 7.524397860004513,
+        "mean_latency": 0.7834300100221299,
+        "median_latency": 0.729002270498313,
+        "p95_latency": 1.4063829376304056,
+        "p99_latency": 0,
+        "min_latency": 0.5865949579747394,
+        "max_latency": 1.8343943749787286
+      },
+      "comparison": {
+        "speedup": 1.0982024777732964,
+        "latency_improvement": 3.643156971178574
+      }
+    },
+    "20": {
+      "openai": {
+        "total_time": 3.695759707945399,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 13.529018104858537,
+        "mean_latency": 0.8006494049029425,
+        "median_latency": 0.7626012709806673,
+        "p95_latency": 1.1788630936993285,
+        "p99_latency": 0,
+        "min_latency": 0.6169648340437561,
+        "max_latency": 1.31646775000263
+      },
+      "rust": {
+        "total_time": 8.605994292069227,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 5.809903923138438,
+        "mean_latency": 0.8741403300152161,
+        "median_latency": 0.7196039165137336,
+        "p95_latency": 1.5447407376894262,
+        "p99_latency": 0,
+        "min_latency": 0.5359401250025257,
+        "max_latency": 6.0449629159411415
+      },
+      "comparison": {
+        "speedup": 0.4294401765233788,
+        "latency_improvement": -9.17891459885396
+      }
+    },
+    "50": {
+      "openai": {
+        "total_time": 1.958492000005208,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 25.52984643279985,
+        "mean_latency": 0.9341180849797093,
+        "median_latency": 0.8815098539926112,
+        "p95_latency": 1.4054060915543232,
+        "p99_latency": 0,
+        "min_latency": 0.7276737089268863,
+        "max_latency": 1.9444436250487342
+      },
+      "rust": {
+        "total_time": 1.6888992090243846,
+        "successful_requests": 50,
+        "failed_requests": 0,
+        "throughput": 29.6050822528854,
+        "mean_latency": 1.2909945258474909,
+        "median_latency": 1.2701336875325069,
+        "p95_latency": 1.5921304210380185,
+        "p99_latency": 0,
+        "min_latency": 1.1314381669508293,
+        "max_latency": 1.687586750020273
+      },
+      "comparison": {
+        "speedup": 1.159626335035444,
+        "latency_improvement": -38.204638857359626
+      }
+    }
+  }
+}
