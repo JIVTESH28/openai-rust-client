@@ -3,15 +3,17 @@ requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "openai-rust-client"
-version = "0.1.0"
-requires-python = ">=3.8"
+name = "rustc_ai_framework"
+version = "0.1.2"
+requires-python = ">=3.9"
 dependencies = [
+    "anthropic>=0.71.0",
+    "google>=3.0.0",
     "openai>=1.0.0",
 ]
 
 [tool.maturin]
-module-name = "openai_rust_client"
+module-name = "rustc_ai_framework"
 binding = "pyo3"
 
 [tool.uv.workspace]
